@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<questionnaire:Questionnaire xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:questionnaire="questionnaire">
+  <entree etapeSuivante="//@questions.3"/>
+  <infos intitule="Bieeeeen ! Vous pouvez continuer" etapeSuivante="//@questions.1"/>
+  <infos intitule="Quittez ce questionnaire et allez le voir !" etapeSuivante="//@sortie.0"/>
+  <infos intitule="Seriously !? Vous n'avez rien compris au film en fait...Il vous faut un rafraîchissement de mémoire" etapeSuivante="//@sortie.0"/>
+  <infos intitule="Trop fort !" etapeSuivante="//@sortie.1"/>
+  <infos intitule="-_- ! Quand on regarde un film, on le regarde jusqu'à la fin..." etapeSuivante="//@sortie.1"/>
+  <infos intitule="Ah merde ! Désolé, ce questionnaire n'est pas fait pour vous...:s" etapeSuivante="//@sortie.1"/>
+  <infos intitule="Vous êtes au bon endroit :)" etapeSuivante="//@questions.4"/>
+  <infos intitule="Mouais..." etapeSuivante="//@questions.0"/>
+  <infos intitule="Pas mal !" etapeSuivante="//@questions.0"/>
+  <infos intitule="Bieeen :)" etapeSuivante="//@questions.0"/>
+  <infos intitule="Excellente réponse ! Vous et moi allons bien nous entendre" etapeSuivante="//@questions.0"/>
+  <infos intitule="Beurk !" etapeSuivante="//@questions.0"/>
+  <questions xsi:type="questionnaire:QuestionBinaire" intitule="Avez-vous regardé le film The Usual Suspects ?">
+    <oui etapeSuivante="//@infos.0"/>
+    <non intitule="" etapeSuivante="//@infos.1"/>
+  </questions>
+  <questions xsi:type="questionnaire:QuestionValeur" intitule="Combien de suspects sont interpellés dans le film ?">
+    <reponse intitule="5" valeur="5" vrai="//@questions.2" faux="//@infos.2"/>
+  </questions>
+  <questions xsi:type="questionnaire:QuestionChoixMultiple" intitule="Qui est Keyser Söze ?">
+    <reponses intitule="Kint" etapeSuivante="//@infos.3"/>
+    <reponses intitule="Hockney" etapeSuivante="//@infos.2"/>
+    <reponses intitule="Keaton" etapeSuivante="//@infos.4"/>
+    <reponses intitule="Fenster" etapeSuivante="//@infos.2"/>
+    <reponses intitule="McManus" etapeSuivante="//@infos.2"/>
+  </questions>
+  <questions xsi:type="questionnaire:QuestionBinaire" intitule="Êtes-vous fan de cinéma ?">
+    <oui etapeSuivante="//@infos.6"/>
+    <non etapeSuivante="//@infos.5"/>
+  </questions>
+  <questions xsi:type="questionnaire:QuestionChoixMultiple" intitule="Quel est votre genre de film préféré ?">
+    <reponses intitule="Action" etapeSuivante="//@infos.9"/>
+    <reponses intitule="Aventure" etapeSuivante="//@infos.9"/>
+    <reponses intitule="Comédie" etapeSuivante="//@infos.8"/>
+    <reponses intitule="Romantique" etapeSuivante="//@infos.11"/>
+    <reponses intitule="Science-fiction" etapeSuivante="//@infos.7"/>
+    <reponses intitule="Thriller" etapeSuivante="//@infos.10"/>
+  </questions>
+  <sortie/>
+  <sortie/>
+</questionnaire:Questionnaire>

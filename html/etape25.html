@@ -1,0 +1,30 @@
+<HTML>
+<head>
+<meta charset="UTF-8">
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<link href="../css/common.css" rel="stylesheet">
+<script src="../js/common.js"></script>
+<script src="../js/question_binaire.js"></script>
+</head>
+<BODY>
+<div>
+	<div> <img src="../img/cinema.jpg" alt="Cinema"> </div>
+	<h2>Question</h2>
+	<p>Êtes-vous fan de cinéma ?</p>
+	<div class="radio">
+  		<label><input id="oui" type="radio" name="optradio" checked>Oui</label>
+  	</div>
+  	<div class="radio">
+  		<label><input id="non" type="radio" name="optradio">Non</label>
+	</div>
+	
+	<button type="button" class="btn btn-default">
+		<a id="back" href="entree.html">Retour à l'accueil</a>
+	</button>
+	<button type="button" class="btn btn-primary" onclick="addToSession('Êtes-vous fan de cinéma ?', redirect(8, 7)); return false;">
+		<a id="next" href="#">Etape suivante </a>
+	</button>
+</div>
+</BODY>
+</HTML>
+

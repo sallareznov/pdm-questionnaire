@@ -1,0 +1,37 @@
+<HTML>
+<head>
+<meta charset="UTF-8">
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<link href="../css/common.css" rel="stylesheet">
+<script src="../js/common.js"></script>
+<script src="../js/question_choix_multiple.js"></script>
+</head>
+<BODY>
+<div>
+<div> <img src="../img/cinema.jpg" alt="Cinema"> </div>
+<h2>Question</h2>
+<p>Qui est Keyser Söze ?</p>
+<div class="radio">
+  	<label><input class="choice" type="radio" name="optradio">Kint</label>
+</div>
+<div class="radio">
+  	<label><input class="choice" type="radio" name="optradio">Hockney</label>
+</div>
+<div class="radio">
+  	<label><input class="choice" type="radio" name="optradio">Keaton</label>
+</div>
+<div class="radio">
+  	<label><input class="choice" type="radio" name="optradio">Fenster</label>
+</div>
+<div class="radio">
+  	<label><input class="choice" type="radio" name="optradio">McManus</label>
+</div>
+<button type="button" class="btn btn-default">
+		<a id="back" href="entree.html">Retour à l'accueil</a>
+	</button>
+	<button type="button" class="btn btn-primary" onclick="addToSession('Qui est Keyser Söze ?', redirect([5, 4, 6, 4, 4])); return false;">
+		<a id="next" href="#">Etape suivante </a>
+	</button>
+</div>
+</BODY>
+</HTML>

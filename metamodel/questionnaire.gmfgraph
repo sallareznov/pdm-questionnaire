@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="ASCII"?>
+<gmfgraph:Canvas xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gmfgraph="http://www.eclipse.org/gmf/2006/GraphicalDefinition" name="questionnaire">
+  <figures name="Default">
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="EtapeEtapeSuivanteFigureTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="ReponseValeurVraiFigureTargetDecoration"/>
+    <figures xsi:type="gmfgraph:PolylineDecoration" name="ReponseValeurFauxFigureTargetDecoration"/>
+    <descriptors name="EntreeFigure">
+      <actualFigure xsi:type="gmfgraph:SVGFigure" name="EntreeFigure" documentURI="platform:/plugin/questionnaire/svg/home.svg">
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+        <children xsi:type="gmfgraph:Label" name="EntreeLabelFigure" text="Entree"/>
+      </actualFigure>
+      <accessors accessor="getFigureEntreeLabelFigure" figure="//@figures.0/@descriptors.0/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="SortieFigure">
+      <actualFigure xsi:type="gmfgraph:SVGFigure" name="SortieFigure" documentURI="platform:/plugin/questionnaire/svg/exit.svg">
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+        <children xsi:type="gmfgraph:Label" name="SortieLabelFigure" text="Sortie"/>
+      </actualFigure>
+      <accessors accessor="getFigureSortieLabelFigure" figure="//@figures.0/@descriptors.1/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="InformationFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="InformationFigure">
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+        <children xsi:type="gmfgraph:Label" name="InformationLabelFigure" text="Information"/>
+      </actualFigure>
+      <accessors accessor="getFigureInformationLabelFigure" figure="//@figures.0/@descriptors.2/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="QuestionTexteFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="QuestionTexteFigure">
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+        <children xsi:type="gmfgraph:Label" name="QuestionTexteLabelFigure" text="QuestionTexte">
+          <maximumSize dx="10000" dy="50"/>
+        </children>
+        <children xsi:type="gmfgraph:Rectangle" name="QuestionTexteReponseCompartmentFigure" outline="false"/>
+      </actualFigure>
+      <accessors accessor="getFigureQuestionTexteLabelFigure" figure="//@figures.0/@descriptors.3/@actualFigure/@children.0"/>
+      <accessors accessor="getQuestionTexteReponseCompartmentFigure" figure="//@figures.0/@descriptors.3/@actualFigure/@children.1"/>
+    </descriptors>
+    <descriptors name="QuestionBinaireFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="QuestionBinaireFigure">
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+        <children xsi:type="gmfgraph:Label" name="QuestionBinaireLabelFigure" text="QuestionBinaire">
+          <maximumSize dx="10000" dy="50"/>
+        </children>
+        <children xsi:type="gmfgraph:Rectangle" name="QuestionBinaireOuiCompartmentFigure" outline="false"/>
+        <children xsi:type="gmfgraph:Rectangle" name="QuestionBinaireNonCompartmentFigure" outline="false"/>
+      </actualFigure>
+      <accessors accessor="getFigureQuestionBinaireLabelFigure" figure="//@figures.0/@descriptors.4/@actualFigure/@children.0"/>
+      <accessors accessor="getQuestionBinaireOuiCompartmentFigure" figure="//@figures.0/@descriptors.4/@actualFigure/@children.1"/>
+      <accessors accessor="getQuestionBinaireNonCompartmentFigure" figure="//@figures.0/@descriptors.4/@actualFigure/@children.2"/>
+    </descriptors>
+    <descriptors name="QuestionValeurFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="QuestionValeurFigure">
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+        <children xsi:type="gmfgraph:Label" name="QuestionValeurLabelFigure" text="QuestionValeur">
+          <maximumSize dx="10000" dy="50"/>
+        </children>
+        <children xsi:type="gmfgraph:Rectangle" name="QuestionValeurReponseCompartmentFigure" outline="false"/>
+      </actualFigure>
+      <accessors accessor="getFigureQuestionValeurLabelFigure" figure="//@figures.0/@descriptors.5/@actualFigure/@children.0"/>
+      <accessors accessor="getQuestionValeurReponseCompartmentFigure" figure="//@figures.0/@descriptors.5/@actualFigure/@children.1"/>
+    </descriptors>
+    <descriptors name="QuestionChoixMultipleFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="QuestionChoixMultipleFigure">
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+        <children xsi:type="gmfgraph:Label" name="QuestionChoixMultipleLabelFigure" text="QuestionChoixMultiple">
+          <maximumSize dx="10000" dy="50"/>
+        </children>
+        <children xsi:type="gmfgraph:Rectangle" name="QuestionChoixMultipleReponsesCompartmentFigure" outline="false"/>
+      </actualFigure>
+      <accessors accessor="getFigureQuestionChoixMultipleLabelFigure" figure="//@figures.0/@descriptors.6/@actualFigure/@children.0"/>
+      <accessors accessor="getQuestionChoixMultipleReponsesCompartmentFigure" figure="//@figures.0/@descriptors.6/@actualFigure/@children.1"/>
+    </descriptors>
+    <descriptors name="ReponseTexteFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="ReponseTexteFigure">
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+        <children xsi:type="gmfgraph:Label" name="ReponseTexteLabelFigure" text="ReponseTexte"/>
+      </actualFigure>
+      <accessors accessor="getFigureReponseTexteLabelFigure" figure="//@figures.0/@descriptors.7/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="ReponseOuiFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="ReponseOuiFigure">
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+        <children xsi:type="gmfgraph:Label" name="ReponseOuiLabelFigure" text="Oui"/>
+      </actualFigure>
+      <accessors accessor="getFigureReponseOuiLabelFigure" figure="//@figures.0/@descriptors.8/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="ReponseNonFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="ReponseNonFigure">
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+        <children xsi:type="gmfgraph:Label" name="ReponseNonLabelFigure" text="Non"/>
+      </actualFigure>
+      <accessors accessor="getFigureReponseNonLabelFigure" figure="//@figures.0/@descriptors.9/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="ReponseValeurFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="ReponseValeurFigure">
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+        <children xsi:type="gmfgraph:Label" name="ReponseValeurLabelFigure" text="ReponseValeur"/>
+      </actualFigure>
+      <accessors accessor="getFigureReponseValeurLabelFigure" figure="//@figures.0/@descriptors.10/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="ReponseChoixMultipleFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="ReponseChoixMultipleFigure">
+        <border xsi:type="gmfgraph:MarginBorder">
+          <insets top="5" left="5" bottom="5" right="5"/>
+        </border>
+        <children xsi:type="gmfgraph:Label" name="ReponseChoixMultipleLabelFigure" text="ReponseChoixMultiple"/>
+      </actualFigure>
+      <accessors accessor="getFigureReponseChoixMultipleLabelFigure" figure="//@figures.0/@descriptors.11/@actualFigure/@children.0"/>
+    </descriptors>
+    <descriptors name="EtapeEtapeSuivanteFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="EtapeEtapeSuivanteFigure" targetDecoration="//@figures.0/@figures.0"/>
+    </descriptors>
+    <descriptors name="EtapeEtapeSuivanteExternalLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="EtapeEtapeSuivanteExternalLabel"/>
+    </descriptors>
+    <descriptors name="ReponseValeurVraiFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="ReponseValeurVraiFigure" targetDecoration="//@figures.0/@figures.1"/>
+    </descriptors>
+    <descriptors name="ReponseValeurVraiExternalLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="ReponseValeurVraiExternalLabel"/>
+    </descriptors>
+    <descriptors name="ReponseValeurFauxFigure">
+      <actualFigure xsi:type="gmfgraph:PolylineConnection" name="ReponseValeurFauxFigure" targetDecoration="//@figures.0/@figures.2"/>
+    </descriptors>
+    <descriptors name="ReponseValeurFauxExternalLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="ReponseValeurFauxExternalLabel"/>
+    </descriptors>
+  </figures>
+  <nodes name="Entree" figure="EntreeFigure"/>
+  <nodes name="Sortie" figure="SortieFigure"/>
+  <nodes name="Information" figure="InformationFigure"/>
+  <nodes name="QuestionTexte" figure="QuestionTexteFigure"/>
+  <nodes name="QuestionBinaire" figure="QuestionBinaireFigure"/>
+  <nodes name="QuestionValeur" figure="QuestionValeurFigure"/>
+  <nodes name="QuestionChoixMultiple" figure="QuestionChoixMultipleFigure"/>
+  <nodes name="ReponseTexte" figure="ReponseTexteFigure"/>
+  <nodes name="ReponseOui" figure="ReponseOuiFigure"/>
+  <nodes name="ReponseNon" figure="ReponseNonFigure"/>
+  <nodes name="ReponseValeur" figure="ReponseValeurFigure"/>
+  <nodes name="ReponseChoixMultiple" figure="ReponseChoixMultipleFigure"/>
+  <connections name="EtapeEtapeSuivante" figure="EtapeEtapeSuivanteFigure"/>
+  <connections name="ReponseValeurVrai" figure="ReponseValeurVraiFigure"/>
+  <connections name="ReponseValeurFaux" figure="ReponseValeurFauxFigure"/>
+  <compartments name="QuestionTexteReponseCompartment" figure="QuestionTexteFigure" collapsible="true" accessor="//@figures.0/@descriptors.3/@accessors.1"/>
+  <compartments name="QuestionBinaireOuiCompartment" figure="QuestionBinaireFigure" collapsible="true" accessor="//@figures.0/@descriptors.4/@accessors.1"/>
+  <compartments name="QuestionBinaireNonCompartment" figure="QuestionBinaireFigure" collapsible="true" accessor="//@figures.0/@descriptors.4/@accessors.2"/>
+  <compartments name="QuestionValeurReponseCompartment" figure="QuestionValeurFigure" collapsible="true" accessor="//@figures.0/@descriptors.5/@accessors.1"/>
+  <compartments name="QuestionChoixMultipleReponsesCompartment" figure="QuestionChoixMultipleFigure" collapsible="true" accessor="//@figures.0/@descriptors.6/@accessors.1"/>
+  <labels name="EntreeLabel" figure="EntreeFigure" accessor="//@figures.0/@descriptors.0/@accessors.0"/>
+  <labels name="SortieLabel" figure="SortieFigure" accessor="//@figures.0/@descriptors.1/@accessors.0"/>
+  <labels name="InformationLabel" figure="InformationFigure" accessor="//@figures.0/@descriptors.2/@accessors.0"/>
+  <labels name="QuestionTexteLabel" figure="QuestionTexteFigure" accessor="//@figures.0/@descriptors.3/@accessors.0"/>
+  <labels name="QuestionBinaireLabel" figure="QuestionBinaireFigure" accessor="//@figures.0/@descriptors.4/@accessors.0"/>
+  <labels name="QuestionValeurLabel" figure="QuestionValeurFigure" accessor="//@figures.0/@descriptors.5/@accessors.0"/>
+  <labels name="QuestionChoixMultipleLabel" figure="QuestionChoixMultipleFigure" accessor="//@figures.0/@descriptors.6/@accessors.0"/>
+  <labels name="ReponseTexteLabel" figure="ReponseTexteFigure" accessor="//@figures.0/@descriptors.7/@accessors.0"/>
+  <labels name="ReponseOuiLabel" figure="ReponseOuiFigure" accessor="//@figures.0/@descriptors.8/@accessors.0"/>
+  <labels name="ReponseNonLabel" figure="ReponseNonFigure" accessor="//@figures.0/@descriptors.9/@accessors.0"/>
+  <labels name="ReponseValeurLabel" figure="ReponseValeurFigure" accessor="//@figures.0/@descriptors.10/@accessors.0"/>
+  <labels name="ReponseChoixMultipleLabel" figure="ReponseChoixMultipleFigure" accessor="//@figures.0/@descriptors.11/@accessors.0"/>
+  <labels name="EtapeEtapeSuivanteExternalLabel" figure="EtapeEtapeSuivanteExternalLabelFigure" elementIcon="false"/>
+  <labels name="ReponseValeurVraiExternalLabel" figure="ReponseValeurVraiExternalLabelFigure" elementIcon="false"/>
+  <labels name="ReponseValeurFauxExternalLabel" figure="ReponseValeurFauxExternalLabelFigure" elementIcon="false"/>
+</gmfgraph:Canvas>

@@ -1,0 +1,27 @@
+<HTML>
+<head>
+<meta charset="UTF-8">
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<link href="../css/common.css" rel="stylesheet">
+<script src="../js/common.js"></script>
+<script src="../js/question_choix_multiple.js"></script>
+</head>
+<BODY>
+<div>
+<div> <img src="../img/cinema.jpg" alt="Cinema"> </div>
+<h2>Question</h2>
+<p>[%=question.intitule%]</p>
+[% for (choix in question.reponses) { %]
+<div class="radio">
+  	<label><input class="choice" type="radio" name="optradio">[%=choix.intitule%]</label>
+</div>
+[% } %]
+<button type="button" class="btn btn-default">
+		<a id="back" href="entree.html">Retour à l'accueil</a>
+	</button>
+	<button type="button" class="btn btn-primary" onclick="addToSession('[%=question.intitule%]', redirect([%=suivants%])); return false;">
+		<a id="next" href="#">Etape suivante </a>
+	</button>
+</div>
+</BODY>
+</HTML>

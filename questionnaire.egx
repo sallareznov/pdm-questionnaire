@@ -1,0 +1,50 @@
+rule Entree
+	transform entree : Entree {
+		template : "templates/entree.egl"
+		target : "html/entree.html"
+	}
+	
+rule Information
+	transform info : Information {
+		template : "templates/information.egl"
+		target : "html/etape" + (Etape.all.indexOf(info) + 1) + ".html"
+	}
+	
+rule QuestionBinaire
+	transform question : QuestionBinaire {
+		template : "templates/question_binaire.egl"
+		target : "html/etape" + (Etape.all.indexOf(question) + 1) + ".html"
+	}
+
+rule QuestionChoixMultiple
+	transform question : QuestionChoixMultiple {
+		parameters {
+			var params : new Map;
+   			var suivants : new List;
+   			for (choix in question.reponses) {
+   				suivants.add(Etape.all.indexOf(choix.etapeSuivante) + 1);
+   			}
+   			params.put("suivants", suivants);
+   			return params;
+  		}
+		template : "templates/question_choix_multiple.egl"
+		target : "html/etape" + (Etape.all.indexOf(question) + 1) + ".html"
+	}
+
+rule QuestionValeur
+	transform question : QuestionValeur {
+		template : "templates/question_valeur.egl"
+		target : "html/etape" + (Etape.all.indexOf(question) + 1) + ".html"
+	}
+	
+rule QuestionTexte
+	transform question : QuestionTexte {
+		template : "templates/question_texte.egl"
+		target : "html/etape" + (Etape.all.indexOf(question) + 1) + ".html"
+	}
+
+rule Sortie
+	transform sortie : Sortie {
+		template : "templates/sortie.egl"
+		target : "html/etape" + (Etape.all.indexOf(sortie) + 1) + ".html"
+	}

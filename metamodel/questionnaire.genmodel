@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" copyrightText="" modelDirectory="/questionnaire/src" modelPluginID="questionnaire"
+    modelName="Questionnaire" importerID="org.eclipse.emf.importer.ecore" complianceLevel="6.0"
+    copyrightFields="false">
+  <foreignModel>questionnaire.emf</foreignModel>
+  <genPackages prefix="Questionnaire" disposableProviderFactory="true" ecorePackage="questionnaire.ecore#/">
+    <genClasses ecoreClass="questionnaire.ecore#//Questionnaire">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference questionnaire.ecore#//Questionnaire/entree"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference questionnaire.ecore#//Questionnaire/infos"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference questionnaire.ecore#//Questionnaire/questions"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference questionnaire.ecore#//Questionnaire/sortie"/>
+    </genClasses>
+    <genClasses ecoreClass="questionnaire.ecore#//Entree"/>
+    <genClasses ecoreClass="questionnaire.ecore#//Sortie"/>
+    <genClasses image="false" ecoreClass="questionnaire.ecore#//Etape">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute questionnaire.ecore#//Etape/intitule"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference questionnaire.ecore#//Etape/etapeSuivante"/>
+    </genClasses>
+    <genClasses ecoreClass="questionnaire.ecore#//Information"/>
+    <genClasses image="false" ecoreClass="questionnaire.ecore#//Question"/>
+    <genClasses ecoreClass="questionnaire.ecore#//QuestionTexte">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference questionnaire.ecore#//QuestionTexte/reponse"/>
+    </genClasses>
+    <genClasses ecoreClass="questionnaire.ecore#//QuestionBinaire">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference questionnaire.ecore#//QuestionBinaire/oui"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference questionnaire.ecore#//QuestionBinaire/non"/>
+    </genClasses>
+    <genClasses ecoreClass="questionnaire.ecore#//QuestionValeur">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference questionnaire.ecore#//QuestionValeur/reponse"/>
+    </genClasses>
+    <genClasses ecoreClass="questionnaire.ecore#//QuestionChoixMultiple">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference questionnaire.ecore#//QuestionChoixMultiple/reponses"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="questionnaire.ecore#//Reponse"/>
+    <genClasses ecoreClass="questionnaire.ecore#//ReponseTexte"/>
+    <genClasses ecoreClass="questionnaire.ecore#//ReponseOui"/>
+    <genClasses ecoreClass="questionnaire.ecore#//ReponseNon"/>
+    <genClasses ecoreClass="questionnaire.ecore#//ReponseValeur">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute questionnaire.ecore#//ReponseValeur/valeur"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference questionnaire.ecore#//ReponseValeur/vrai"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference questionnaire.ecore#//ReponseValeur/faux"/>
+    </genClasses>
+    <genClasses ecoreClass="questionnaire.ecore#//ReponseChoixMultiple"/>
+  </genPackages>
+</genmodel:GenModel>

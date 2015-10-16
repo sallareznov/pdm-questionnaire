@@ -1,0 +1,22 @@
+<HTML>
+<head>
+	<meta charset="UTF-8">
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
+	<link href="../css/common.css" rel="stylesheet">
+	<script src="../js/entree.js"></script>
+</head>
+<BODY>
+	<div>
+		<div> <img src="../img/cinema.jpg" alt="Cinema"> </div>
+		<h1>Bienvenue au questionnaire du Professeur Salla</h1>
+		<p>Vous répondrez à une série de questions de plusieurs types. Ces questions sont en rapport avec le cinéma, et plus particulièrement le meilleur film de tous les temps : <b>The Usual Suspects</b>.</p>
+		<p>Ce questionnaire a été généré par un méta-modèle grâce à Epsilon et Eugenia.</p> 
+		<button type="button" class="btn btn-primary">
+			<a id="next" href="etape[%=Etape.all.indexOf(entree.etapeSuivante) + 1%].html">
+				Passer aux questions
+			</a>
+		</button>
+		<script>initSession()</script>
+	</div>
+</BODY>
+</HTML>

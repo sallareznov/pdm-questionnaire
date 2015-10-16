@@ -1,0 +1,85 @@
+@namespace(uri="questionnaire",prefix="questionnaire")
+@gmf
+package questionnaire;
+
+@gmf.diagram
+class Questionnaire {
+	val Entree[1] entree;
+	val Information[*] infos;
+	val Question[*] questions;
+	val Sortie[*] sortie;
+}
+
+@gmf.node(label.text="Entree", label.readOnly="true", figure="svg",svg.uri="platform:/plugin/questionnaire/svg/home.svg")
+class Entree extends Etape {
+}
+
+@gmf.node(label.text="Sortie", label.readOnly="true", figure="svg",svg.uri="platform:/plugin/questionnaire/svg/exit.svg")
+class Sortie extends Etape {
+}
+
+
+@gmf.node(label="intitule")
+abstract class Etape {
+	attr String intitule;
+	@gmf.link(target.decoration="arrow")
+	ref Etape etapeSuivante;
+}
+
+
+class Information extends Etape {
+}
+
+// QUESTIONS
+
+abstract class Question extends Etape {
+}
+
+class QuestionTexte extends Question {
+	@gmf.compartment
+	val ReponseTexte[1] reponse;
+}
+
+class QuestionBinaire extends Question {
+	@gmf.compartment
+	val ReponseOui[1] oui;
+	@gmf.compartment
+	val ReponseNon[1] non;
+}
+
+class QuestionValeur extends Question {
+	@gmf.compartment
+	val ReponseValeur[1] reponse;
+}
+
+class QuestionChoixMultiple extends Question {
+	@gmf.compartment
+	val ReponseChoixMultiple[2..*] reponses;
+}
+
+// RÉPONSES
+
+abstract class Reponse extends Etape {
+}
+
+class ReponseTexte extends Reponse {	
+}
+
+@gmf.node(label.readOnly="true", label.text="Oui")
+class ReponseOui extends Reponse {
+}
+
+@gmf.node(label.readOnly="true", label.text="Non")
+class ReponseNon extends Reponse {
+}
+
+class ReponseValeur extends Reponse {
+	attr int valeur;
+	@gmf.link(target.decoration="arrow")
+	ref Etape vrai;
+	@gmf.link(target.decoration="arrow")
+	ref Etape faux;
+}
+
+class ReponseChoixMultiple extends Reponse {
+}

@@ -1,0 +1,24 @@
+<HTML>
+<head>
+<meta charset="UTF-8">
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<link href="../css/common.css" rel="stylesheet">
+<script src="../js/common.js"></script>
+<script src="../js/question_valeur.js"></script>
+</head>
+<BODY>
+<div>
+	<div> <img src="../img/cinema.jpg" alt="Cinema"> </div>
+	<h2>Question</h2> 
+	<p>Combien de suspects sont interpellés dans le film ?</p>
+	<div><input type="number" id="valeur" name="valeur" value="0"></div>
+	<br/>
+	<button type="button" class="btn btn-default">
+		<a id="back" href="entree.html">Retour à l'accueil</a>
+	</button>
+	<button type="button" class="btn btn-primary">
+		<a id="next" href="#" onclick="addToSession('Combien de suspects sont interpellés dans le film ?', redirect(5, 19, 4)); return false;">Etape suivante </a>
+	</button>
+</div>
+</BODY>
+</HTML>

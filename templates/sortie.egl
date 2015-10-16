@@ -1,0 +1,32 @@
+<HTML>
+<head>
+<meta charset="UTF-8">
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<link href="../css/common.css" rel="stylesheet">
+<script src="../js/common.js"></script>
+</head>
+<BODY>
+<div>
+<div> <img src="../img/cinema.jpg" alt="Cinema"> </div>
+<h1>Merci d'avoir participé à ce questionnaire !</h1>
+<p>Un récapitulatif de celui-ci :</p>
+</div>
+<table id="recap" style="width: 100%" class="table table-hover">
+	<thead>
+  <tr>
+  	<th>Question</th>
+  	<th>Réponse</th>
+  </tr>
+  </thead>
+  <tbody id="body">
+  <script>getSession()</script>
+  </tbody>
+</table>
+<br/>
+<div> <img src="../img/giphy.gif" alt="Usual Suspects"> </div>
+<br/>
+<button type="button" class="btn btn-default">
+		<a id="back" href="entree.html">Recommencer</a>
+</button>
+</BODY>
+</HTML>
